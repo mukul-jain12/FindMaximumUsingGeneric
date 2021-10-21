@@ -7,14 +7,14 @@ public class FindMaximim {
 	//main method
 	public static void main(String args[]) {
 		
-		//integer values
-		Integer intVal1 = 12, intVal2 = 13, intVal3 = 9;
+		//Float values
+		Float intVal1 = 12.21f, intVal2 = 18.22f, intVal3 = 9.2f;
 		
 		//assign 1st value to max
-		Integer max = intVal1;
+		Float max = intVal1;
 		
 		//checking max with other values
-		if (intVal1.compareTo(max) > 0) {
+		if (intVal2.compareTo(max) > 0) {
 			max = intVal2;
 		}
 		if (intVal3.compareTo(max) > 0) {

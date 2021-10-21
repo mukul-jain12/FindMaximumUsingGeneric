@@ -29,6 +29,11 @@ public class FindMaximim {
 		if (val3.compareTo(max) > 0) {
 			max = val3;
 		}
-		System.out.println("Amongst the three the maximum is " + max);
+		printMax(max);
 	}
+	
+	public static <E> void printMax(E max) {
+		System.out.println("Amongst the three the maximum is " + max);		
+	}
+
 }

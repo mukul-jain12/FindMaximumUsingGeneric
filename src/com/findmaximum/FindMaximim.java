@@ -8,17 +8,17 @@ public class FindMaximim {
 	public static void main(String args[]) {
 		
 		//Float values
-		Float intVal1 = 12.21f, intVal2 = 18.22f, intVal3 = 9.2f;
+		String strVal1 = "Ram", strVal2 = "Shaam", strVal3 = "Sagar";
 		
 		//assign 1st value to max
-		Float max = intVal1;
+		String max = strVal1;
 		
 		//checking max with other values
-		if (intVal2.compareTo(max) > 0) {
-			max = intVal2;
+		if (strVal2.compareTo(max) > 0) {
+			max = strVal2;
 		}
-		if (intVal3.compareTo(max) > 0) {
-			max = intVal3;
+		if (strVal3.compareTo(max) > 0) {
+			max = strVal3;
 		}
 	
 		//printing maximum value among three

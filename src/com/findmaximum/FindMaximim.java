@@ -14,7 +14,7 @@ public class FindMaximim {
 		Integer max = intVal1;
 		
 		//checking max with other values
-		if (intVal1.compareTo(max) > 0) {
+		if (intVal2.compareTo(max) > 0) {
 			max = intVal2;
 		}
 		if (intVal3.compareTo(max) > 0) {

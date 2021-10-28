@@ -6,32 +6,34 @@ public class FindMaximim {
 
 	//main method
 	public static void main(String args[]) {
-		Integer intVal1 = 12, intVal2 = 13, intVal3 = 9;
-		Float floatVal1 = 12.55f, floatVal2 = 13.65f, floatVal3 = 19.22f;
-		String strVal1 = "Ram", strVal2 = "Chahal", strVal3 = "Pahal";
-		
+		Integer[] intVal = {12, 13, 9, 5};
+		Float[] floatVal = {12.55f, 13.65f, 19.22f};
+		String[] strVal = {"Ram", "Chahal", "Pahal"};
+
 		//call generic method
-		toprint(intVal1, intVal2, intVal3);
-		toprint(floatVal1, floatVal2, floatVal3);
-		toprint(strVal1, strVal2, strVal3);
+		toprint(intVal);
+		toprint(floatVal);
+		toprint(strVal);
 	}
 
 	//generic method
-	private static <E extends Comparable<E>> void toprint(E val1, E val2, E val3) {
-		
+	private static <E extends Comparable<E>> void toprint(E[] arrValue) {
+
 		//assign value to max
-		E max = val1;
-		
+		E max = arrValue[0];
+
 		//check value is greater of not
-		if (val2.compareTo(max) > 0) {
-			max = val2;
-		}
-		if (val3.compareTo(max) > 0) {
-			max = val3;
+		for (int i = 1; i < arrValue.length; i++) {
+			
+			int result = max.compareTo(arrValue[i]);
+			
+			if(result < 0) {
+				max = arrValue[i];
+			}
 		}
 		printMax(max);
 	}
-	
+
 	public static <E> void printMax(E max) {
 		System.out.println("Amongst the three the maximum is " + max);		
 	}

@@ -11,13 +11,13 @@ public class FindMaximim {
 		String[] strVal = {"Ram", "Chahal", "Pahal"};
 
 		//call generic method
-		toprint(intVal);
-		toprint(floatVal);
-		toprint(strVal);
+		findMaximum(intVal);
+		findMaximum(floatVal);
+		findMaximum(strVal);
 	}
 
 	//generic method
-	private static <E extends Comparable<E>> void toprint(E[] arrValue) {
+	private static <E extends Comparable<E>> void findMaximum(E[] arrValue) {
 
 		//assign value to max
 		E max = arrValue[0];
